@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box; 
+    gap: 30px;
+    }
+    
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 30px;
+    background: pink;
+    }
+    
+    .header{
+        background: lightskyblue;
+        height: 20vh;
+    }
+    
+    #main {
+    display: flex;
+    flex: 1;
+    }
+    
+    #main > article {
+    flex: 3;
+    order: 3;
+    background: red;
+    }
+    
+    #main > aside {
+    flex: 1;
+    order: 1;
+    background: blue;
+    flex: 0 0 20vw;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .flex-item{
+        width: 800px;
+        height: 500px;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-image: url(anime.jpg);
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+    .footer {
+    background-color: lightskyblue;
+    height: 20vh;
+    }
+    
+    header, footer, article, nav, aside {
+    padding: 1em;
+    }
+    
