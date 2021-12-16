@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    masukan Angka (0 - 9):
+    <input type="number" id="bil1" value="" size="10"/>
+    <button onclick="tebak()">Tebak Angka</button>
+    <br>
+    <span id="hasil"></span>
+
+
+
+
+
+
+
+
+    <script>
+    function tebak(){
+        let bilangan1 = document.getElementById("bil1").value;
+        //alert("Lu kan Nulisnya " + bilangan1 + "\n Random " + bilrandom);
+        let hasilcek = (bilangan1 == bilrandom);
+        console.log('bilangan1 '+ bilangan1);
+        console.log('bilrandom '+ bilrandom);
+        console.log('hasil cek ' + hasilcek);
+        let hasil = document.getElementById('hasil');
+        let txthasil = (hasilcek)? 'BENAR': 'SALAH';
+        hasil.innerHTML ='TEBAKAN ANDA ' + txthasil;
+        if(hasilcek){
+            hasil.style.background='red';
+            hasil.style.color='white';
+        }else{
+            hasil.style.background='red';
+            hasil.style.color='white';
+        }
+    }
+    
+    let bilrandom = Math.floor(Math.random() * 10);
+        let name = 'Bob';
+        let winner = 'true';
+        let score = '95';
+        console.log("nama :" + name);
+        let hasil = (winner==true)? "Menang": "Kalah";
+        console.log("Hasil :" + hasil);
+        console.log("nilai :" + score);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            height: 400px;
+            width: 300px;
+            border: 10px solid red;
+        }
+        .kubus{
+            display: flex;
+            height: 400px;
+            width: 300px;
+            border: 10px solid red;  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <div class="kubus"></div>
+    <div class="kubus"></div>
+    <div class="kubus"></div>
+    <script>
+
+        let box = document.getElementsByClassName("box")
+        for(let i=0; i< box.length; i++){
+            box[i].innerHTML = 'Woi';
+        }   
+
+        let kubus = document.getElementsByClassName('kubus')
+        for(let i=0; i< kubus.length; i++){
+            kubus[i].innerHTML="hai";
+        }
+    </script>
+</body>
+</html>
