@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Menghitung 2 Angka</h3>
+    Nilai Pertama <br>
+    <input type="text" name="nilai" id="nilai1"><br/>
+    Nilai Ke Dua <br/>
+    <input type="text" name="nilai" id="nilai2"><br/><br/>
+    <input type="submit" onclick="jumlah()" value="Tambahkan">
+    <p id="isi"></p>
+
+    <script type="text/javascript">
+    function jumlah(){
+
+        var satu = document.getElementById('nilai1').value; 
+        var dua = document.getElementById('nilai2').value;
+        var total = parseInt(satu) + parseInt(dua);
+        document.getElementById('isi').innerHTML = " Hasilnya adalah " +  total;
+    }
+    
+</script>
+</body>
+</html>
